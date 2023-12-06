@@ -54,7 +54,7 @@ const Book = () => {
             <Card sx={{ maxWidth: '500px' }}>
               <CardMedia
                 component='img'
-                image='/BookCover.jpg'
+                image='https://asiede.github.io/hildy/BookCover.jpg'
                 alt="Hildy's Promise Cover Art"
               />
             </Card>
