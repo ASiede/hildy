@@ -44,7 +44,7 @@ const AboutTheAuthor = () => {
             >
               <CardMedia
                 component='img'
-                image='/AuthorPhoto.jpg'
+                image='https://asiede.github.io/hildy//AuthorPhoto.jpg' // TODO: update dynamic bas path so its /hildy/AuthorPhoto.jpg for prod
                 alt='Richard Finn Photo'
               />
             </Card>
