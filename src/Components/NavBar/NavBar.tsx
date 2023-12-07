@@ -3,13 +3,13 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
 import { Link } from '@mui/material';
 
 const pages = [
-  { name: 'ABOUT THE BOOK', ref: '#about-the-book' },
-  { name: 'ABOUT THE AUTHOR', ref: '#about-the-author' },
-  { name: 'CONTACT', ref: '#contact' },
+  { name: 'ABOUT THE BOOK', ref: '/#about-the-book' },
+  { name: 'ABOUT THE AUTHOR', ref: '/#about-the-author' },
+  { name: 'CONTACT', ref: '/#contact' },
+  { name: 'EXCERPT', ref: '/excerpt' },
 ];
 
 const NavBar = () => {
