@@ -21,22 +21,24 @@ const NavBar = () => {
     >
       <Container maxWidth='xl'>
         <Toolbar disableGutters>
-          <Typography
-            variant='h4'
-            noWrap
-            component='a'
-            color='secondary'
-            sx={{
-              mr: 2,
-              display: { md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              textDecoration: 'none',
-            }}
-          >
-            RICHARD FINN
-          </Typography>
+          <Link href={'/'}>
+            <Typography
+              variant='h4'
+              noWrap
+              component='a'
+              color='secondary'
+              sx={{
+                mr: 2,
+                display: { md: 'flex' },
+                fontFamily: 'monospace',
+                fontWeight: 700,
+                letterSpacing: '.3rem',
+                textDecoration: 'none',
+              }}
+            >
+              RICHARD FINN
+            </Typography>
+          </Link>
           <Box
             sx={{
               flexGrow: 1,
