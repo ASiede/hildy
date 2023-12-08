@@ -5,7 +5,7 @@ const assetPrefix = `/${repo}/`;
 const basePath = `/${repo}`;
 
 const nextConfig = {
-  // output: 'export',
+  output: 'export',
   // Add basePath
   // assetPrefix: assetPrefix,
   basePath: '/hildy/app',
