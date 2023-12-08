@@ -1,8 +1,15 @@
 /** @type {import('next').NextConfig} */
+
+const repo = 'hildy';
+const assetPrefix = `/${repo}/`;
+const basePath = `/${repo}`;
+
 const nextConfig = {
-  output: 'export',
+  // output: 'export',
   // Add basePath
-  basePath: '/hildy',
+  assetPrefix: assetPrefix,
+  basePath: basePath,
+
   webpack: (config) => {
     config.resolve.alias.canvas = false;
     return config;
