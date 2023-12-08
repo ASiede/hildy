@@ -8,7 +8,7 @@ const nextConfig = {
   output: 'export',
   // Add basePath
   assetPrefix: assetPrefix,
-  basePath: basePath,
+  basePath: '/hildy',
 
   webpack: (config) => {
     config.resolve.alias.canvas = false;
