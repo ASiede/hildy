@@ -14,7 +14,12 @@ const Contact = () => {
     >
       <Divider id='contact'>CONTACT</Divider>
       <Box sx={{ display: 'flex', justifyContent: 'center', margin: '20px' }}>
-        <Button variant='contained' size='large' startIcon={<Email />}>
+        <Button
+          variant='contained'
+          size='large'
+          href='mailto:richardfinn57@gmail.com'
+          startIcon={<Email />}
+        >
           Email the Author
         </Button>
       </Box>
