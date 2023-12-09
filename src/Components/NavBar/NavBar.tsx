@@ -3,16 +3,15 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import { Link } from '@mui/material';
+import { Button, Link } from '@mui/material';
 
 const pages = [
   { name: 'ABOUT THE BOOK', ref: '/#about-the-book' },
   { name: 'ABOUT THE AUTHOR', ref: '/#about-the-author' },
   { name: 'CONTACT', ref: '/#contact' },
-  { name: 'EXCERPT', ref: '/excerpt' },
 ];
 
-const NavBar = () => {
+const NavBar = ({ toggleShowExcerpt }: { toggleShowExcerpt: any }) => {
   return (
     <AppBar
       position='static'
@@ -56,10 +55,23 @@ const NavBar = () => {
                   fontSize: '20px',
                 }}
                 href={page.ref}
+                onClick={() => toggleShowExcerpt(false)}
               >
                 {page.name}
               </Link>
             ))}
+            <Button
+              key={'excerpt'}
+              sx={{
+                my: 2,
+                color: 'white',
+                display: 'block',
+                fontSize: '20px',
+              }}
+              onClick={() => toggleShowExcerpt(true)}
+            >
+              {'EXCERPT'}
+            </Button>
           </Box>
         </Toolbar>
       </Container>

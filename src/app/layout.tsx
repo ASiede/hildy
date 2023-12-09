@@ -39,7 +39,6 @@ export default function RootLayout({
           style={{ backgroundColor: '#f5f4f4' }}
         >
           <CssBaseline />
-          <NavBar></NavBar>
           {children}
         </body>
       </html>
