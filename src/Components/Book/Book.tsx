@@ -77,7 +77,7 @@ const Book = ({ toggleShowExcerpt }: { toggleShowExcerpt: any }) => {
               onClick={() => toggleShowExcerpt(true)}
               // endIcon={<ArrowCircleRightIcon />}
             >
-              Sneak peak of Chapter 1
+              Sneak peek of Chapter 1
             </Button>
           </Box>
         </Grid>
