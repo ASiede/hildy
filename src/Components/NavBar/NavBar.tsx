@@ -6,7 +6,7 @@ import Container from '@mui/material/Container';
 import { Button, Link } from '@mui/material';
 
 const pages = [
-  { name: 'ABOUT THE BOOK', ref: '/#about-the-book' },
+  { name: 'ABOUT THE BOOK', ref: '/hildy/#about-the-book' },
   { name: 'ABOUT THE AUTHOR', ref: '/#about-the-author' },
   { name: 'CONTACT', ref: '/#contact' },
 ];
