@@ -19,13 +19,14 @@ const NavBar = ({ toggleShowExcerpt }: { toggleShowExcerpt: any }) => {
 
   return (
     <AppBar
+      id='nav-bar'
       position='static'
       color='primary'
       sx={{ height: '125px', display: 'flex', justifyContent: 'center' }}
     >
       <Container maxWidth='xl'>
         <Toolbar disableGutters>
-          <Link href={'/'}>
+          <Button href={'#nav-bar'} onClick={() => toggleShowExcerpt(false)}>
             <Typography
               variant='h4'
               noWrap
@@ -42,7 +43,7 @@ const NavBar = ({ toggleShowExcerpt }: { toggleShowExcerpt: any }) => {
             >
               RICHARD FINN
             </Typography>
-          </Link>
+          </Button>
           <Box
             sx={{
               flexGrow: 1,
