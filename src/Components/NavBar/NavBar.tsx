@@ -4,14 +4,19 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { Button, Link } from '@mui/material';
+import { useRouter } from 'next/navigation';
 
 const pages = [
-  { name: 'ABOUT THE BOOK', ref: '/hildy/#about-the-book' },
+  { name: 'ABOUT THE BOOK', ref: '#about-the-book' },
   { name: 'ABOUT THE AUTHOR', ref: '/#about-the-author' },
   { name: 'CONTACT', ref: '/#contact' },
 ];
 
+// router.push(`/account/${subNav}`);
+
 const NavBar = ({ toggleShowExcerpt }: { toggleShowExcerpt: any }) => {
+  const router = useRouter();
+
   return (
     <AppBar
       position='static'
@@ -46,7 +51,7 @@ const NavBar = ({ toggleShowExcerpt }: { toggleShowExcerpt: any }) => {
             }}
           >
             {pages.map((page) => (
-              <Link
+              <Button
                 key={page.name}
                 sx={{
                   my: 2,
@@ -58,7 +63,7 @@ const NavBar = ({ toggleShowExcerpt }: { toggleShowExcerpt: any }) => {
                 onClick={() => toggleShowExcerpt(false)}
               >
                 {page.name}
-              </Link>
+              </Button>
             ))}
             <Button
               key={'excerpt'}
