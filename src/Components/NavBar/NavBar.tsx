@@ -8,8 +8,8 @@ import { useRouter } from 'next/navigation';
 
 const pages = [
   { name: 'ABOUT THE BOOK', ref: '#about-the-book' },
-  { name: 'ABOUT THE AUTHOR', ref: '/#about-the-author' },
-  { name: 'CONTACT', ref: '/#contact' },
+  { name: 'ABOUT THE AUTHOR', ref: '#about-the-author' },
+  { name: 'CONTACT', ref: '#contact' },
 ];
 
 // router.push(`/account/${subNav}`);
