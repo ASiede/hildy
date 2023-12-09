@@ -41,7 +41,7 @@ const NavBar = ({ toggleShowExcerpt }: { toggleShowExcerpt: any }) => {
                 textDecoration: 'none',
               }}
             >
-              RICHARD FINN
+              RICHARD M. FINN
             </Typography>
           </Button>
           <Box

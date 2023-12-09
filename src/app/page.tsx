@@ -19,7 +19,7 @@ const Home = () => {
         <Excerpt></Excerpt>
       ) : (
         <Grid container>
-          <Book></Book>
+          <Book toggleShowExcerpt={toggleShowExcerpt}></Book>
           <AboutTheAuthor></AboutTheAuthor>
           <Contact></Contact>
         </Grid>

@@ -8,7 +8,10 @@ import {
   Typography,
 } from '@mui/material';
 
-const Book = () => {
+import MenuBookIcon from '@mui/icons-material/MenuBook';
+import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
+
+const Book = ({ toggleShowExcerpt }: { toggleShowExcerpt: any }) => {
   return (
     <Grid item xs={12}>
       <Grid
@@ -58,6 +61,24 @@ const Book = () => {
                 alt="Hildy's Promise Cover Art"
               />
             </Card>
+          </Box>
+          <Box
+            sx={{
+              display: 'flex',
+              justifyContent: 'center',
+              marginTop: '20px',
+            }}
+          >
+            <Button
+              variant='contained'
+              color={'inherit'}
+              sx={{ backgroundColor: 'white', textAlign: 'center' }}
+              size='large'
+              onClick={() => toggleShowExcerpt(true)}
+              // endIcon={<ArrowCircleRightIcon />}
+            >
+              Sneak peak of Chapter 1
+            </Button>
           </Box>
         </Grid>
         <Grid item xs={12} md={6}>
