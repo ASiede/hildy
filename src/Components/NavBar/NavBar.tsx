@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import { Button, Link } from '@mui/material';
+import { Button } from '@mui/material';
 import * as React from 'react';
 import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
@@ -53,6 +53,7 @@ const NavBar = ({ toggleShowExcerpt }: { toggleShowExcerpt: any }) => {
                 fontWeight: 700,
                 letterSpacing: '.3rem',
                 textDecoration: 'none',
+                fontSize: '2rem',
               }}
             >
               RICHARD M. FINN
@@ -118,6 +119,7 @@ const NavBar = ({ toggleShowExcerpt }: { toggleShowExcerpt: any }) => {
               fontWeight: 700,
               letterSpacing: '.3rem',
               textDecoration: 'none',
+              fontSize: '2rem',
             }}
           >
             R.M. Finn

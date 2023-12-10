@@ -8,9 +8,6 @@ import {
   Typography,
 } from '@mui/material';
 
-import MenuBookIcon from '@mui/icons-material/MenuBook';
-import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
-
 const Book = ({ toggleShowExcerpt }: { toggleShowExcerpt: any }) => {
   return (
     <Grid item xs={12}>
@@ -27,13 +24,9 @@ const Book = ({ toggleShowExcerpt }: { toggleShowExcerpt: any }) => {
           variant='contained'
           size='large'
           color='secondary'
-          sx={{
-            margin: '30px',
-            // color: '#A71D31',
-            fontSize: '20px',
-          }}
+          sx={{ marginTop: '30px' }}
         >
-          Coming Soon!
+          Available Soon
         </Button>
       </Grid>
       <Divider id='about-the-book' sx={{ margin: '20px' }}>
@@ -54,7 +47,7 @@ const Book = ({ toggleShowExcerpt }: { toggleShowExcerpt: any }) => {
               justifyContent: 'center',
             }}
           >
-            <Card sx={{ maxWidth: '500px' }}>
+            <Card sx={{ maxWidth: '400px' }}>
               <CardMedia
                 component='img'
                 image='https://asiede.github.io/hildy/BookCover.jpg'
@@ -75,7 +68,6 @@ const Book = ({ toggleShowExcerpt }: { toggleShowExcerpt: any }) => {
               sx={{ backgroundColor: 'white', textAlign: 'center' }}
               size='large'
               onClick={() => toggleShowExcerpt(true)}
-              // endIcon={<ArrowCircleRightIcon />}
             >
               Sneak peek of Chapter 1
             </Button>
@@ -83,12 +75,12 @@ const Book = ({ toggleShowExcerpt }: { toggleShowExcerpt: any }) => {
         </Grid>
         <Grid item xs={12} md={6}>
           <Box sx={{ margin: '20px' }}>
-            <Typography variant='h3'>
+            <Typography variant='h5'>
               Birdies, Bogeys and Blood flow in this Crime Novel Debut
             </Typography>
             <Typography
               variant='body1'
-              sx={{ fontSize: '30px', marginTop: '25px' }}
+              sx={{ fontSize: '1.25rem', marginTop: '25px' }}
             >
               Hildy Swanson, a wealthy Westchester County socialite and
               community benefactor, is kidnapped at gunpoint in her home in the
@@ -100,7 +92,7 @@ const Book = ({ toggleShowExcerpt }: { toggleShowExcerpt: any }) => {
             </Typography>
             <Typography
               variant='body1'
-              sx={{ fontSize: '30px', marginTop: '25px' }}
+              sx={{ fontSize: '1.25rem', marginTop: '25px' }}
             >
               Because she inherited a considerable fortune after her first
               husband died, Hildy is a tempting mark for the kidnappers. She has
@@ -110,7 +102,7 @@ const Book = ({ toggleShowExcerpt }: { toggleShowExcerpt: any }) => {
             </Typography>
             <Typography
               variant='body1'
-              sx={{ fontSize: '30px', marginTop: '25px' }}
+              sx={{ fontSize: '1.25rem', marginTop: '25px' }}
             >
               When RG Cassidy, Hildy’s husband, returns home, the former golf
               champion finds the strange ransom note ordering him to meet the
@@ -120,7 +112,7 @@ const Book = ({ toggleShowExcerpt }: { toggleShowExcerpt: any }) => {
             </Typography>
             <Typography
               variant='body1'
-              sx={{ fontSize: '30px', marginTop: '25px' }}
+              sx={{ fontSize: '1.25rem', marginTop: '25px' }}
             >
               The case is a challenge for a fast-growing suburban town that has
               drawn two upstate New York cops to its expanding force. But there

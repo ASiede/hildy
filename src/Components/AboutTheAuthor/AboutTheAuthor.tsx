@@ -15,7 +15,10 @@ const AboutTheAuthor = () => {
         }}
       >
         <Grid item xs={12} md={6} sx={{ margin: '30px' }}>
-          <Typography variant='body1' sx={{ margin: '20px', fontSize: '30px' }}>
+          <Typography
+            variant='body1'
+            sx={{ margin: '20px', fontSize: '1.25rem' }}
+          >
             Richard Finn was born in Manhattan and is a lifelong resident of the
             area. Started in 2020 as a pandemic shutdown project, Hildy’s
             Promise is his first full-length novel. A long and accomplished
