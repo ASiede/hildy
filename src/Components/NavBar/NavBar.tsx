@@ -22,7 +22,6 @@ const NavBar = ({ toggleShowExcerpt }: { toggleShowExcerpt: any }) => {
     null
   );
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    console.log('open nav');
     setAnchorElNav(event.currentTarget);
   };
   const handleCloseNavMenu = () => {
