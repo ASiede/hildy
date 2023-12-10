@@ -1,10 +1,7 @@
 'use client';
-import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-// import { MuiThemeProvider, createTheme } from '@material-ui/core/styles';
 import './globals.css';
 import { CssBaseline, createTheme, ThemeProvider } from '@mui/material';
-import NavBar from '@/Components/NavBar/NavBar';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -34,8 +31,6 @@ export default function RootLayout({
       <html lang='en'>
         <body
           className={inter.className}
-          // style={{ backgroundColor: '#BFC3BA' }}
-          // style={{ backgroundColor: '#dddad9' }}
           style={{ backgroundColor: '#f5f4f4' }}
         >
           <CssBaseline />

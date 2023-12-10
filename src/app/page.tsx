@@ -5,7 +5,7 @@ import Contact from '@/Components/Contact/Contact';
 import Excerpt from '@/Components/Excerpt/Excerpt';
 import NavBar from '@/Components/NavBar/NavBar';
 import { Box, Grid } from '@mui/material';
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 
 const Home = () => {
   const [showExcerpt, setShowExcerpt] = useState(false);
