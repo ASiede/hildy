@@ -4,6 +4,7 @@ import { Document, pdfjs, Page as PDFPage } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import { Box, Card } from '@mui/material';
+import './Excerpt.css';
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.js',
@@ -16,8 +17,8 @@ const Excerpt = () => {
       sx={{
         display: 'flex',
         justifyContent: 'center',
-        width: '100% !important',
-        height: 'auto !important',
+        // width: '100% !important',
+        // height: 'auto !important',
       }}
     >
       <Document file={'./ChapterOneFormatted.pdf'}>
@@ -27,7 +28,11 @@ const Excerpt = () => {
             marginTop: '10px',
           }}
         >
-          <PDFPage key={`page_1`} pageNumber={1} width={1000} />
+          <PDFPage
+            key={`page_1`}
+            pageNumber={1}
+            // width={1000}
+          />
         </Card>
         <Card sx={{ marginBottom: '10px', marginTop: '10px' }}>
           <PDFPage key={`page_2`} pageNumber={2} width={1000} />
