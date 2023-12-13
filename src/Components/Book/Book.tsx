@@ -26,7 +26,7 @@ const Book = ({ toggleShowExcerpt }: { toggleShowExcerpt: any }) => {
           color='secondary'
           sx={{ marginTop: '30px' }}
         >
-          Available December 15th
+          Available Soon
         </Button>
       </Grid>
       <Divider id='about-the-book' sx={{ margin: '20px' }}>
