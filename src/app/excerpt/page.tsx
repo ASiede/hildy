@@ -21,7 +21,7 @@ const Page = () => {
         height: 'auto !important',
       }}
     >
-      <Document file={'./ChapterOneFormatted.pdf'}>
+      <Document file={'./ChapterOneRevised.pdf'}>
         <Card
           sx={{
             marginBottom: '10px',
