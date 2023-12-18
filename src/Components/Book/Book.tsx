@@ -8,7 +8,12 @@ import {
   Typography,
 } from '@mui/material';
 
+const url = 'https://www.amazon.com/dp/B0CQJ2B7VL';
+
 const Book = ({ toggleShowExcerpt }: { toggleShowExcerpt: any }) => {
+  const openNewTab = () => {
+    (window as any).open(url, '_blank').focus();
+  };
   return (
     <Grid item xs={12}>
       <Grid
@@ -25,8 +30,9 @@ const Book = ({ toggleShowExcerpt }: { toggleShowExcerpt: any }) => {
           size='large'
           color='secondary'
           sx={{ marginTop: '30px' }}
+          onClick={() => openNewTab()}
         >
-          Available Soon
+          Buy Now
         </Button>
       </Grid>
       <Divider id='about-the-book' sx={{ margin: '20px' }}>
