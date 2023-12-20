@@ -32,7 +32,15 @@ const Book = ({ toggleShowExcerpt }: { toggleShowExcerpt: any }) => {
           sx={{ marginTop: '30px' }}
           onClick={() => openNewTab()}
         >
-          Buy Now
+          Buy for Kindle
+        </Button>
+        <Button
+          variant='contained'
+          size='large'
+          color='secondary'
+          sx={{ marginTop: '30px' }}
+        >
+          Paperback Available Jan 1st 2024
         </Button>
       </Grid>
       <Divider id='about-the-book' sx={{ margin: '20px' }}>
