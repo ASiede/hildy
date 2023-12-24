@@ -8,7 +8,7 @@ import {
   Typography,
 } from '@mui/material';
 
-const url = 'https://www.amazon.com/dp/B0CQJ2B7VL';
+const url = 'https://www.amazon.com/dp/B0CQVXJLZG';
 
 const Book = ({ toggleShowExcerpt }: { toggleShowExcerpt: any }) => {
   const openNewTab = () => {
@@ -32,15 +32,7 @@ const Book = ({ toggleShowExcerpt }: { toggleShowExcerpt: any }) => {
           sx={{ marginTop: '30px' }}
           onClick={() => openNewTab()}
         >
-          Buy for Kindle
-        </Button>
-        <Button
-          variant='contained'
-          size='large'
-          color='secondary'
-          sx={{ marginTop: '30px' }}
-        >
-          Paperback Available Jan 1st 2024
+          Buy Now
         </Button>
       </Grid>
       <Divider id='about-the-book' sx={{ margin: '20px' }}>
